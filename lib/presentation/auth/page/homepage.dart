@@ -35,19 +35,14 @@ class _StatehomePage extends State<bodyHomePage> {
   }
 }
 
-
-
-
-
 // Icoinsearchbar Widget
 Widget _iconSearchWidget() {
   return (Container(
     child: Row(
       children: [
         IconButton(
-          
           onPressed: () {},
-          icon: Icon(Icons.search_off_sharp, color: Colors.white, size: 35,),
+          icon: Icon(Icons.search_outlined, color: Colors.white, size: 35),
         ),
       ],
     ),
