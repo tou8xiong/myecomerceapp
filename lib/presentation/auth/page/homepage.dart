@@ -67,7 +67,7 @@ Widget _promotionWidget() {
   ];
 
   return (Container(
-    margin: EdgeInsets.all(10),
+    margin: EdgeInsets.symmetric(horizontal: 0, vertical: 10),
     child: Column(
       children: [
         Container(
@@ -86,10 +86,11 @@ Widget _promotionWidget() {
         Container(
           decoration: BoxDecoration(
             // border: Border.all(color: Colors.white),
-            // color: const Color.fromARGB(49, 48, 47, 47),
+            color: const Color.fromARGB(97, 28, 44, 59),
+            borderRadius: BorderRadius.circular(10),
           ),
           height: 200,
-          margin: EdgeInsets.all(10),
+
           child: Row(
             children: _imagelongShow.map((imagePath) {
               return Expanded(

@@ -45,7 +45,6 @@ PreferredSizeWidget appBarWidget() {
         if (first.isEmpty) initials += last.toUpperCase();
 
         return Padding(
-          
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: GestureDetector(
             onTap: () {
@@ -77,12 +76,14 @@ PreferredSizeWidget appBarWidget() {
         );
       },
     ),
-    title: Text(
-      'Flex JK',
-      style: GoogleFonts.notoSans(
-        fontSize: 30,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
+    title: Container(
+      child: Text(
+        'Flex JK',
+        style: GoogleFonts.notoSans(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ),
       ),
     ),
     actions: [
@@ -90,9 +91,7 @@ PreferredSizeWidget appBarWidget() {
         iconSize: 40,
         color: const Color.fromARGB(255, 255, 255, 255),
         alignment: Alignment.topLeft,
-        onPressed: () {
-          
-        },
+        onPressed: () {},
         icon: const Icon(Icons.shopping_cart),
       ),
     ],
