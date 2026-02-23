@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myecomerceapp/presentation/auth/page/homepage.dart';
+import 'package:myecomerceapp/presentation/home/pages/home_page.dart';
 import 'package:myecomerceapp/presentation/auth/page/signup.dart';
 import 'package:myecomerceapp/presentation/service_locator.dart';
 import 'package:myecomerceapp/domain/auth/repository/atuh.dart';
@@ -51,7 +51,7 @@ class _SigninPageState extends State<SigninPage> {
           ).showSnackBar(SnackBar(content: Text(message)));
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => Homepage()),
+            MaterialPageRoute(builder: (context) => const HomePage()),
           );
         },
       );
@@ -121,7 +121,7 @@ Widget _SignInContent(
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => Homepage()),
+                    MaterialPageRoute(builder: (context) => const HomePage()),
                   );
                 },
                 child: Text(

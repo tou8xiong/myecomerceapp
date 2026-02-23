@@ -59,7 +59,7 @@ Widget _iconSearchWidget() {
 }
 
 Widget _promotionWidget() {
-  final _imagelongShow = [
+  final imagelongShow = [
     "assets/images/imagelong1.png",
     "assets/images/imagelong2.png",
     "assets/images/imagelong3.png",
@@ -92,7 +92,7 @@ Widget _promotionWidget() {
           height: 200,
 
           child: Row(
-            children: _imagelongShow.map((imagePath) {
+            children: imagelongShow.map((imagePath) {
               return Expanded(
                 child: Padding(
                   padding: EdgeInsets.all(10),
